@@ -23,19 +23,22 @@ body {
     background-image: url(hpbg2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-
+    background-position: center center;
+    min-height: 100vh;
 }
 .two{
     background-image: url(hpbg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-
+    background-position: center center;
+    min-height: 100vh;
 }
 .three{
     background-image: url(trainhp.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-
+    background-position: center center;
+    min-height: 100vh;
 }
 
 header {
@@ -234,4 +237,119 @@ footer {
 .hufflepuff {
     border-left: 5px solid #ecb939;
     background: linear-gradient(135deg, #00000031 0%, #0000006c 50%, #4a2a00 100%);
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 16px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        gap: 10px;
+        margin: 16px 0 0 0;
+    }
+    .hp img{
+        width: 40%;
+        height: auto;
+    }
+    nav ul li {
+        margin: 0;
+        font-size: smaller;
+        gap: 200px;
+    }
+    nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+    transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+    color: #8a5b8e;
+    text-shadow: 0 0 10px #392639, 0 0 20px #392639;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+    }
+
+    .house,
+    .character {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: left;
+        padding: 18px;
+        font-size: 0.7em;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .house img,
+    .character img {
+        width: 30%;
+        height: auto;
+        margin-right: 0;
+        margin-bottom: 16px;
+        max-width: 360px;
+        align-self: center;
+    }
+
+    .house div,
+    .character div {
+        width: 80%;
+        justify-content: center;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .cards {
+        gap: 16px;
+    }
+p{
+    font-size: 0.7em;
+}
+    main,
+    section {
+        padding: 0 16px;
+    }
+
+    body {
+        background-position: center top;
+    }
+}
+h2{
+    font-size: small;
+}
+.one{
+    background-image: url(hpbg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    max-height: 100vh;
+    background-attachment: fixed;
+}
+.two{
+    background-image: url(hpbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    max-height: 100vh;
+    background-attachment: fixed;
+}
+.three{
+    background-image: url(trainhp.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    max-height: 100vh;
+    background-attachment: fixed;
+}
+.card{
+    font-size: small;
 }
