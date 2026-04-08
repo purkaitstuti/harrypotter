@@ -239,6 +239,7 @@ footer {
     background: linear-gradient(135deg, #00000031 0%, #0000006c 50%, #4a2a00 100%);
 }
 
+
 @media (max-width: 768px) {
     header {
         padding: 16px;
