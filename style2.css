@@ -37,9 +37,7 @@ header {
     text-align: center;
     background-color: #000000;
 }
-p{
-    font-size: 0.7em;
-}
+
 header h1 {
     margin: 0;
     background: -webkit-linear-gradient(180deg, rgba(255, 255, 255, 0.95), rgba(60, 29, 64, 0.95), rgba(255, 255, 255, 0.95));
@@ -54,7 +52,6 @@ header h1 {
     justify-content: center;
     align-items: center;
     width: 100%;
-    max-height: 200px;
 
 }
 nav ul {
@@ -325,6 +322,8 @@ h2{
     background-image: url(hpbg2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: top center;
+    height: 100vh;
     background-attachment: fixed;
 }
 .two{
@@ -344,39 +343,14 @@ h2{
     background-attachment: fixed;
 }
 .card{
-    font-size: 0.5em;
+    font-size: small;
 }
-
-/* ============= DESKTOP VIEW (769px and above) ============= */
-@media (min-width: 769px) {
-    h2 {
-        font-size: 1.5em;
-    }
-    
-    .one,
-    .two,
-    .three {
-        background-attachment: scroll;
-        background-repeat: repeat;
-    }
-    
-    main {
-        max-width: 1200px;
-    }
-
-    header h1 {
-        font-size: 1.5em;
-    }
-}
-
-/* ============= MOBILE VIEW (768px and below) ============= */
 @media (max-width: 768px) {
     body {
         background-attachment: relative;
         background-position: center center;
         height: auto;
     }
-
     h2{
         font-size: larger;
     }
